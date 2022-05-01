@@ -1,0 +1,4 @@
+Device1 Name,Device1 Port Name,Wire Type,Device2 Name,Device2 Port Name
+pek2-hs1-c0301,ilo,ilo,pek2-c03-n3248-1,01
+pek2-hs1-c0301,onboard:25gb-1,fiber,pek2-c03-s5248-1,01
+pek2-hs1-c0301,onboard:25gb-2,fiber,pek2-c03-s5248-2,01

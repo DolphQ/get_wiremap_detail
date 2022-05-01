@@ -17,19 +17,20 @@ class wiremap_detail(object):
 
         with open('wiremap_html2text','w', encoding='utf-8') as write_text:
             write_text.write(wiremap_info)
-            wiremap_list = []
+
+        # Write the wiremap list into the list
+        wiremap_list = []
 
         for wiremap_line in wiremap_info.split('\n'):
             wiremap_field = wiremap_line.split(',')
-
             wiremap_list += [wiremap_field]
 
-        wiremap_list.pop()
-        for i in wiremap_list:
-            print('%-20s %-20s %-20s %-20s %-20s' % (i[0], i[1], '<--'+ i[2] + '-->', i[3], i[4]))
+        wiremap_list.pop() # Delete the last mismatch line
+        for wiremap in wiremap_list:
+            print('%-20s %-20s %-20s %-20s %-20s' % (wiremap[0], wiremap[1], '<--'+ wiremap[2] + '-->', wiremap[3], wiremap[4]))
 
 def main():
-    wiremap=wiremap_detail("iobj004")
+    wiremap=wiremap_detail("pek2-hs1-c0301")
     wiremap.get_wiremap()
 
 if __name__ == '__main__':
