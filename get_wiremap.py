@@ -15,9 +15,6 @@ class wiremap_detail(object):
 
         wiremap_info = re.sub('\"', '', wiremap_csv, flags=re.IGNORECASE)
 
-        with open('wiremap_html2text','w', encoding='utf-8') as write_text:
-            write_text.write(wiremap_info)
-
         # Write the wiremap list into the list
         wiremap_list = []
 
