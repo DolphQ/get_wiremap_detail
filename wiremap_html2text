@@ -1,0 +1,131 @@
+Username:|  
+---|---  
+Password:|  |  
+  
+![vmware](img/vmw_logo_gray.gif) Wire Map Database
+
+Last update on 2022-04-29 21:48:53
+
+Having Issues? email aqualset@vmware.com
+
+
+
+####  You may not get the full functionality of this product because JavaScript is either disabled
+or not supported by your browser.
+
+  * [Search](index.php?action=search)
+
+|  
+---|---  
+  
+Search
+
+Search Name of _d_ evice |  contains is starts with |  
+---|---|---  
+Name of _p_ ort |  contains is starts with |  
+_W_ ire type: |  DAC fiber ilo iscsi net power serial | _O_ utput type: |  html csv xml  
+  
+Showing 1 to 7 of 7  Hide Show [CSV
+Export](index.php?output=csv&action=search&db\[\]=localhost&page=0&dev_type=like&dev_name=pek2-hs1-a0101&port_type=&port_name=)
+
+
+
+Start Device | Start Port | Wire Type | End Device | End Port  
+---|---|---|---|---  
+pek2-hs1-a0101 ![:](img/spacer.png) | ilo | ![<--](img/net.gif) net ![-->](img/net.gif) |
+
+[pek2-a01-s3048-1](index.php?db\[\]=localhost&action=search&page=0&dev_type=is&dev_name=pek2-a01-s3048-1
+"Search pek2-a01-s3048-1") ![:](img/spacer.png)
+
+| 21  
+pek2-hs1-a0101 ![:](img/spacer.png) | onboard-1 | ![<--](img/net.gif) net ![-->](img/net.gif) |
+
+[pek2-a01-s4048-1](index.php?db\[\]=localhost&action=search&page=0&dev_type=is&dev_name=pek2-a01-s4048-1
+"Search pek2-a01-s4048-1") ![:](img/spacer.png)
+
+| 37  
+pek2-hs1-a0101 ![:](img/spacer.png) | onboard-2 | ![<--](img/net.gif) net ![-->](img/net.gif) |
+
+[pek2-a01-s4048-2](index.php?db\[\]=localhost&action=search&page=0&dev_type=is&dev_name=pek2-a01-s4048-2
+"Search pek2-a01-s4048-2") ![:](img/spacer.png)
+
+| 37  
+pek2-hs1-a0101 ![:](img/spacer.png) | onboard-3 | ![<--](img/net.gif) net ![-->](img/net.gif) |
+
+[pek2-a01-s4048-1](index.php?db\[\]=localhost&action=search&page=0&dev_type=is&dev_name=pek2-a01-s4048-1
+"Search pek2-a01-s4048-1") ![:](img/spacer.png)
+
+| 38  
+pek2-hs1-a0101 ![:](img/spacer.png) | onboard-4 | ![<--](img/net.gif) net ![-->](img/net.gif) |
+
+[pek2-a01-s4048-2](index.php?db\[\]=localhost&action=search&page=0&dev_type=is&dev_name=pek2-a01-s4048-2
+"Search pek2-a01-s4048-2") ![:](img/spacer.png)
+
+| 38  
+pek2-hs1-a0101 ![:](img/spacer.png) | slot3/1 | ![<--](img/fiber.gif) fiber ![-->](img/fiber.gif) |
+
+[pek2-a03-s5248-1](index.php?db\[\]=localhost&action=search&page=0&dev_type=is&dev_name=pek2-a03-s5248-1
+"Search pek2-a03-s5248-1") ![:](img/spacer.png)
+
+| 01/20  
+pek2-hs1-a0101 ![:](img/spacer.png) | slot3/2 | ![<--](img/fiber.gif) fiber ![-->](img/fiber.gif) |
+
+[pek2-a03-s5248-2](index.php?db\[\]=localhost&action=search&page=0&dev_type=is&dev_name=pek2-a03-s5248-2
+"Search pek2-a03-s5248-2") ![:](img/spacer.png)
+
+| 01/20  
+  
+
+
+Templates are a predefined collection of ports. Ports are defined as either an individual port
+(Management-1) or a module of incremental ports (A:01 to A:50). Templates are used to quickly and
+accurately add a device to the database, however once that device has been added it has no
+association with the template. When adding a device, the template doesn’t have to be an identical
+match, however the closer the match is, the fewer the number of ports that will have to be manually
+added, removed, or modified. Only Template Administrators have the ability to create and modify
+templates.
+
+A template consists of:
+
+  * A name of the tamplate: This name will appear in the device list when adding new devices.
+  * A list of ports & modules: These define how the new ports on the new device will be created.
+
+When adding an individual port, only the name must be specified. When adding a mode, the start, end,
+and separator are also required.
+
+  * **Name** : Used to uniquely identify the module within the template. It is also possible to include this name as a prefix for the port.
+  * **Module Start** : The first port on the module. The character length of **Module Start** and **Module End** must match, if **Module End** is longer, **Module Start** must be padded with zeros. For example, to create a module that has 20 ports, **Module Start** should be '01' and **Module End** should be '20'.
+  * **Module End** : The last port on the module. By incrementing **Module Start** you must be able to reach **Module End** for the module to be valid.
+  * **Include module name** : If checked, this name will be the prefix for the port name. For example, if the module **Name** is 'card1' with a **Separator** of ':', then 'card1:' will be the prefix for every port created on the module.
+  * **Module Separator** : This character, or characters, will be inserted inbetween the module **Name** and the generated port number if **Include module name** is checked. It will not be used otherwise.
+
+Device names should match the non-qualified hostname of the device (prmx-esx44 instead of prmx-
+esx44.eng.vmware.com). Device and Port names have a restricted character set. Device names may only
+contains [A-Za-z0-9-.], port names are more flexible. All names are automatically converted to lower
+case, and many invalid characters are removed, including whitespace characters.
+
+A new port can be added as a single port by specifying the name of the port, or when adding a PCI
+card, by selecting the type of the card with the correct number of ports. Although it is possible to
+add the ports of a PCI card individually, by selecting the card from the list the ports will be
+generated with the standard-compliant name (pci-X:TYPE:#). If the type of the card does not appear
+in the list, the ports will have to be added manually by specifying each name.
+
+If defined, the **Default Wire Type** will be selected by default when connecting the port to
+another device. If the default is not defined, 'net' is the assumed default. Changing the **Default
+Wire Type** will not affect any existing connections.
+
+A module is a collection of incremental ports. For example, ports 01 to 25.
+
+  * Required: **Module Start** : The first port on the module. The character length of **Module Start** and **Module End** must match, if **Module End** is longer, **Module Start** must be padded with zeros. For example, to create a module that has 20 ports, **Module Start** should be '01' and **Module End** should be '20'.
+  * Required: **Module End** : The last port on the module. By incrementing **Module Start** you must be able to reach **Module End** for the module to be valid.
+  * Optionl: **Module Name** : Name which can be used as a prefix for the port.
+  * Optional: **Include Module Name In Port** : If checked, the **Module Name** will be the prefix for the port name. For example, if the **Module Name** is 'card1' with a **Separator** of ':', then 'card1:' will be the prefix for every port created on the module.
+  * Optional: **Seperator** : This character, or characters, will be inserted inbetween the **Module Name** and the generated port number if **Include module Name** is checked. It will not be used otherwise. 
+
+  * Constraint violation: Either a required value was not provided or there was already an entry that for a field that is required to be unique.
+  * **Unique Fields:**
+    * Device Name+Port Name
+    * Template Name
+    * Template Name+Template Module Name
+  * Device or port name is invalid: Both names must be provided.
+

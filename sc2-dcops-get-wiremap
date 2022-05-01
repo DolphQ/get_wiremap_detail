@@ -1,0 +1,287 @@
++ '[' -z sc2-hs3-d2818 ']'
++ for query in '$@'
+++ whoami
++ username=techops
++ cookiejar=/tmp/.techopscookies
++ egrep --color=never '(^Start|<--\s+\w+\s+-->)'
++ curl -s -b /tmp/.techopscookies -c /tmp/.techopscookies -L 'http://labsdb.eng.vmware.com/wiremap/index.php?action=search&page=0&dev_type=like&dev_name=sc2-hs3-d2818'
++ /usr/bin/html2text -width 100 -style pretty
++ awk '/^Showing /{ P=1; next } /^Templates / {exit} P'
+Start Device      Start Port Wire Type       End Device            End Port
+sc2-hs3-d2818  :  10g-1       <--  net  -->   sc2-s4048-d28-1   :  18
+sc2-hs3-d2818  :  10g-2       <--  net  -->   sc2-s4048-d28-2   :  18
+sc2-hs3-d2818  :  ilo         <--  ilo  -->   sc2-s3048-d28-1   :  18
++ curl -s -b /tmp/.techopscookies -c /tmp/.techopscookies -L 'http://labsdb.eng.vmware.com/wiremap/index.php?action=search&page=1&dev_type=like&dev_name=sc2-hs3-d2818'
++ /usr/bin/html2text -width 100 -style pretty
++ awk '/^Showing /{ P=1; next } /^Templates / {exit} P'
++ egrep --color=never '(^Start|<--\s+\w+\s+-->)'
++ /usr/bin/html2text -width 100 -style pretty
++ awk '/^Showing /{ P=1; next } /^Templates / {exit} P'
++ egrep --color=never '(^Start|<--\s+\w+\s+-->)'
++ curl -s -b /tmp/.techopscookies -c /tmp/.techopscookies -L 'http://labsdb.eng.vmware.com/wiremap/index.php?action=search&page=2&dev_type=like&dev_name=sc2-hs3-d2818'
++ /usr/bin/html2text -width 100 -style pretty
++ awk '/^Showing /{ P=1; next } /^Templates / {exit} P'
++ egrep --color=never '(^Start|<--\s+\w+\s+-->)'
++ curl -s -b /tmp/.techopscookies -c /tmp/.techopscookies -L 'http://labsdb.eng.vmware.com/wiremap/index.php?action=search&page=3&dev_type=like&dev_name=sc2-hs3-d2818'
++ /usr/bin/html2text -width 100 -style pretty
++ awk '/^Showing /{ P=1; next } /^Templates / {exit} P'
++ egrep --color=never '(^Start|<--\s+\w+\s+-->)'
++ curl -s -b /tmp/.techopscookies -c /tmp/.techopscookies -L 'http://labsdb.eng.vmware.com/wiremap/index.php?action=search&page=4&dev_type=like&dev_name=sc2-hs3-d2818'
++ /usr/bin/html2text -width 100 -style pretty
++ awk '/^Showing /{ P=1; next } /^Templates / {exit} P'
++ egrep --color=never '(^Start|<--\s+\w+\s+-->)'
++ curl -s -b /tmp/.techopscookies -c /tmp/.techopscookies -L 'http://labsdb.eng.vmware.com/wiremap/index.php?action=search&page=5&dev_type=like&dev_name=sc2-hs3-d2818'
++ curl -s -b /tmp/.techopscookies -c /tmp/.techopscookies -L 'http://labsdb.eng.vmware.com/wiremap/index.php?action=search&page=6&dev_type=like&dev_name=sc2-hs3-d2818'
++ /usr/bin/html2text -width 100 -style pretty
++ awk '/^Showing /{ P=1; next } /^Templates / {exit} P'
++ egrep --color=never '(^Start|<--\s+\w+\s+-->)'
++ /usr/bin/html2text -width 100 -style pretty
++ awk '/^Showing /{ P=1; next } /^Templates / {exit} P'
++ egrep --color=never '(^Start|<--\s+\w+\s+-->)'
++ curl -s -b /tmp/.techopscookies -c /tmp/.techopscookies -L 'http://labsdb.eng.vmware.com/wiremap/index.php?action=search&page=7&dev_type=like&dev_name=sc2-hs3-d2818'
++ /usr/bin/html2text -width 100 -style pretty
++ awk '/^Showing /{ P=1; next } /^Templates / {exit} P'
++ egrep --color=never '(^Start|<--\s+\w+\s+-->)'
++ curl -s -b /tmp/.techopscookies -c /tmp/.techopscookies -L 'http://labsdb.eng.vmware.com/wiremap/index.php?action=search&page=8&dev_type=like&dev_name=sc2-hs3-d2818'
++ awk '/^Showing /{ P=1; next } /^Templates / {exit} P'
++ egrep --color=never '(^Start|<--\s+\w+\s+-->)'
++ curl -s -b /tmp/.techopscookies -c /tmp/.techopscookies -L 'http://labsdb.eng.vmware.com/wiremap/index.php?action=search&page=9&dev_type=like&dev_name=sc2-hs3-d2818'
++ /usr/bin/html2text -width 100 -style pretty
+
+-b, --cookie <data>
+              (HTTP) Pass the data to the HTTP server in the Cookie header. It is supposedly the data previously received from the server in a "Set-Cookie:"
+              line.  The data should be in the format "NAME1=VALUE1; NAME2=VALUE2".
+
+              If no '=' symbol is used in the argument, it is instead treated as a filename to read previously stored cookie from. This  option  also  acti‐
+              vates  the  cookie  engine  which  will make curl record incoming cookies, which may be handy if you're using this in combination with the -L,
+              --location option or do multiple URL transfers on the same invoke.
+
+-s, --silent
+              Silent  or  quiet  mode. Don't show progress meter or error messages.  Makes Curl mute. It will still output the data you ask for, potentially
+              even to the terminal/stdout unless you redirect it.
+
+              Use -S, --show-error in addition to this option to disable progress meter but still show error messages.
+
+              See also -v, --verbose and --stderr.
+
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang='en'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Wiremap DB</title>
+<link rel="icon" href="http://labsdb.eng.vmware.com/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://labsdb.eng.vmware.com/favicon.ico" type="image/x-icon">
+<link type="text/css" href="inc/style.css" rel="stylesheet">
+<link type="text/css" href="lib/jquery/css/custom-theme/jquery-ui-1.8.2.custom.css" rel="stylesheet">
+<script type="text/javascript" src="lib/jquery/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="lib/jquery/js/jquery-ui-1.8.2.custom.min.js"></script>
+<script type="text/javascript" src="inc/jquery_style.js"></script>
+</head>
+<body>
+<div id='container'>
+<div id='header'>
+<div id='login'>
+   <form method='post' action='https://labsdb.eng.vmware.com/wiremap/index.php'>
+    <input type='hidden' name='login' value='true'>
+    <input type='hidden' name='action' value='search'>
+    <table>
+     <tr><td>
+      <label for='username'>Username:</label></td><td> <input id='username' type='text' class='message' size='10' maxlength='50' name='username'>
+     </td></tr>
+     <tr><td>
+      <label for='password'>Password:</label></td><td> <input id='password' type='password' class='message' size='10' maxlength='50' name='password'>
+      </td><td>
+      <input type='submit' class='ui-state-default ui-corner-all' name='submit' value='Login'>
+     </td></tr>
+    </table>
+   </form>
+</div> <!-- login -->
+
+ <div id='logo'>
+   <img src='img/vmw_logo_gray.gif' alt='vmware'>
+   Wire Map Database
+   <div id='last_update'> Last update on 2022-04-29 21:48:53</div>
+   <div id='last_update'> Having Issues? email aqualset@vmware.com</div>
+ </div>
+
+<div id='header_content'>
+      &nbsp;
+</div>
+<noscript>
+<h4 style='color:red;'>
+You may not get the full functionality of this product because JavaScript is either disabled or not supported by your browser.</h4>
+</noscript>
+<!--[If IE 6]>
+<h4 style='color:red;'>You may not get the full functionality of this product because IE6 is not supported. It is recommended to use IE7+, Chrome, Firefox, Safari, or Opera.</h4>
+<![endif]-->
+</div> <!-- header -->
+
+<div id='menu' class='menu'>
+<ul class='menu'>
+<li><a class='menuitem' href='index.php?action=search'>Search</a></li>
+</ul>
+</div> <!-- menu -->
+
+
+
+<div id='content'>
+
+<script type='text/javascript' src='inc/buttons.js'></script>
+
+<div id='content_head'>
+<script type='text/javascript' src='inc/autocomplete_searchbox.js'></script>
+
+ <div id='searchbox'>
+  <form id='searchbox_form' name='searchbox_form' method='get' action='index.php'>
+   <table><tr><td>
+   <input type='hidden' name='action' value='search'>
+   <input type='hidden' name='page' value='0'>
+   <input type='hidden' name='port_name' value=''>
+   <input type='hidden' name='dev_type' value='like'>
+   <input  id='search_bar' type='text' name='dev_name' size='26' maxlength='200' value='' onMouseOver='if (this.value==text) this.value="";' onBlur='if (this.value=="") this.value=text; focused=0;' onFocus='focused=1;if (this.value==text) this.value="";' onMouseOut='if (!focused) if (this.value=="") this.value=text;' accesskey='s'>
+    <input type='hidden' name='db[]' value='localhost'>
+   </td><td>
+   <input type='submit' value='Search' class='ui-state-default ui-corner-all'>
+   </td>
+   </tr></table>
+  </form>
+<script type='text/javascript'>
+var text='Search by Name of Device';
+var focused=0;
+$("#search_bar").attr('value', text);
+</script>
+ </div> <!-- searchbox -->
+
+<span class='head'>Search</span>
+</div>
+
+<div id='adv_search'>
+  <form method='get' action='index.php'>
+  <fieldset>
+  <legend>Search</legend>
+  <input type='hidden' name='action' value='search'>
+  <input type='hidden' name='page' value='0'>
+<table class='adv_search'>
+   <tr>
+    <td><label for='dev_name' accesskey='d'>Name of <u>d</u>evice</label></td>
+    <td><select class='ui-state-default' name='dev_type'>
+     <option value='like'>contains</option>
+     <option value='is'>is</option>
+     <option value='starts'>starts with</option>
+    </select></td>
+
+    <td><input type='text' name='dev_name' id='dev_name' size='20' maxlength='200' value=''></td>
+   </tr>
+   <tr>
+    <td><label for='port_name' accesskey='p'>Name of <u>p</u>ort</label></td>
+    <td><select class='ui-state-default' name='port_type'>
+     <option value='like'>contains</option>
+     <option value='is'>is</option>
+     <option value='starts'>starts with</option>
+    </select></td>
+    <td><input type='text' name='port_name' id='port_name' size='20' maxlength='200' value=''></td>
+   </tr>
+   <tr>
+    <td><label for='wire_type' accesskey='w'><u>W</u>ire type:</label></td>
+    <td><select name='wire_type[]' multiple='multiple' size='3' id='wire_type'>
+    <option value='DAC'>DAC</option>
+    <option value='fiber'>fiber</option>
+    <option value='ilo'>ilo</option>
+    <option value='iscsi'>iscsi</option>
+    <option value='net'>net</option>
+    <option value='power'>power</option>
+    <option value='serial'>serial</option>
+    </select></td>
+    <td align='right'><label for='output' accesskey='o'><u>O</u>utput type:</label></td>
+    <td><select name='output' size='3' id='output'>
+    <option value='' selected>html</option>
+    <option value='csv'>csv</option>
+    <option value='xml' >xml</option>
+    </select></td>
+   </tr>
+   <tr>
+     <td><input type='submit' value='Search' class='ui-state-default ui-corner-all'></td>
+   </tr>
+</table>
+</fieldset>
+</form>
+</div>
+
+
+
+
+
+</div> <!-- content -->
+<div style="clear:both;"></div>
+
+<script type='text/javascript' src='inc/help.js'></script>
+
+<div id='help-template' class='help-dialog ui-helper-hidden' title='Help: Templates' >
+Templates are a predefined collection of ports. Ports are defined as either an individual port (Management-1) or a module of incremental ports (A:01 to A:50). Templates are used to quickly and accurately add a device to the database, however once that device has been added it has no association with the template. When adding a device, the template doesn’t have to be an identical match, however the closer the match is, the fewer the number of ports that will have to be manually added, removed, or modified. Only Template Administrators have the ability to create and modify templates.
+</div>
+
+<div id='help-adv-template' class='help-dialog ui-helper-hidden' title='Help: Adding &amp; Modifying Templates' >
+A template consists of:
+<ul>
+<li>A name of the tamplate: This name will appear in the device list when adding new devices.</li>
+<li>A list of ports &amp; modules: These define how the new ports on the new device will be created.</li>
+</ul>
+When adding an individual port, only the name must be specified. When adding a mode, the start, end, and separator are also required.
+<ul>
+<li><b>Name</b>: Used to uniquely identify the module within the template. It is also possible to include this name as a prefix for the port.</li>
+<li><b>Module Start</b>: The first port on the module. The character length of <b>Module Start</b> and <b>Module End</b> must match, if <b>Module End</b> is longer, <b>Module Start</b> must be padded with zeros. For example, to create a module that has 20 ports, <b>Module Start</b> should be '01' and <b>Module End</b> should be '20'.</li>
+<li><b>Module End</b>: The last port on the module. By incrementing <b>Module Start</b> you must be able to reach <b>Module End</b> for the module to be valid.</li>
+<li><b>Include module name</b>: If checked, this name will be the prefix for the port name. For example, if the module <b>Name</b> is 'card1' with a <b>Separator</b> of ':', then 'card1:' will be the prefix for every port created on the module.</li>
+<li><b>Module Separator</b>: This character, or characters, will be inserted inbetween the module <b>Name</b> and the generated port number if <b>Include module name</b> is checked. It will not be used otherwise.</li>
+</ul>
+</div>
+<div id='help-name' class='help-dialog ui-helper-hidden' title='Help: Device &amp; Port Naming' >
+Device names should match the non-qualified hostname of the device (prmx-esx44 instead of prmx-esx44.eng.vmware.com). Device and Port names have a restricted character set. Device names may only contains [A-Za-z0-9-.], port names are more flexible. All names are automatically converted to lower case, and many invalid characters are removed, including whitespace characters.
+</div>
+
+<div id='help-pci' class='help-dialog ui-helper-hidden' title='Help: Adding PCI Cards' >
+A new port can be added as a single port by specifying the name of the port, or when adding a PCI card, by selecting the type of the card with the correct number of ports. Although it is possible to add the ports of a PCI card individually, by selecting the card from the list the ports will be generated with the standard-compliant name (pci-X:TYPE:#). If the type of the card does not appear in the list, the ports will have to be added manually by specifying each name.
+</div>
+
+<div id='help-default-wt' class='help-dialog ui-helper-hidden' title='Help: Default Wire Type' >
+If defined, the <b>Default Wire Type</b> will be selected by default when connecting the port to another device. If the default is not defined, 'net' is the assumed default. Changing the <b>Default Wire Type</b> will not affect any existing connections.
+</div>
+
+<div id='help-module' class='help-dialog ui-helper-hidden' title='Help: Adding Module Ports to Device' >
+A module is a collection of incremental ports. For example, ports 01 to 25.
+
+<ul>
+<li>Required: <b>Module Start</b>: The first port on the module. The character length of <b>Module Start</b> and <b>Module End</b> must match, if <b>Module End</b> is longer, <b>Module Start</b> must be padded with zeros. For example, to create a module that has 20 ports, <b>Module Start</b> should be '01' and <b>Module End</b> should be '20'.</li>
+<li>Required: <b>Module End</b>: The last port on the module. By incrementing <b>Module Start</b> you must be able to reach <b>Module End</b> for the module to be valid.</li>
+<li>Optionl: <b>Module Name</b>: Name which can be used as a prefix for the port.</li>
+<li>Optional: <b>Include Module Name In Port</b>: If checked, the <b>Module Name</b> will be the prefix for the port name. For example, if the <b>Module Name</b> is 'card1' with a <b>Separator</b> of ':', then 'card1:' will be the prefix for every port created on the module.</li>
+<li>Optional: <b>Seperator</b>: This character, or characters, will be inserted inbetween the <b>Module Name</b> and the generated port number if <b>Include module Name</b> is checked. It will not be used otherwise.
+</ul>
+
+</div>
+
+<div id='help-errors' class='help-dialog ui-helper-hidden' title='Help: Error Messages' >
+
+<ul>
+<li>Constraint violation: Either a required value was not provided or there was already an entry that for a field that is required to be unique.</li>
+<li><b>Unique Fields:</b>
+<ul>
+<li>Device Name+Port Name</li>
+<li>Template Name</li>
+<li>Template Name+Template Module Name</li>
+</ul>
+</li>
+<li>Device or port name is invalid: Both names must be provided.</li>
+</ul>
+
+</div>
+
+</div> <!-- container -->
+</body>
+</html>
+
+
+
+[1]   Done                    curl http://labsdb.eng.vmware.com/wiremap/index.php?action=search
+[2]-  Done                    page=0
+[3]+  Done                    dev_type=like
